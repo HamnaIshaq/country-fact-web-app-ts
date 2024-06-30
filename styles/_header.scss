@@ -1,0 +1,64 @@
+@import "colors";
+@import "global";
+
+.header {
+  background: $white;
+  width: 100%;
+
+  /*padding: 50px 30px;*/
+  padding: 30px 15px;
+  box-shadow: 0 7px 5px 3px $veryLightGrayLight;
+  font-size: 14px;
+
+  .max-width-container {
+    max-width: 1283px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  &-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $veryDarkBlueLight;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+
+    &-moon {
+      margin-right: 5px;
+      height: 100%;
+      position: relative;
+      top: -1px;
+
+      font-size: 18px;
+    }
+
+    &-btn-dark {
+      color: red;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .header-h1 {
+      font-size: 28px;
+    }
+    .header-btn {
+      font-size: 17px;
+      &-moon {
+        font-size: 20px;
+      }
+    }
+  }
+
+  
+}

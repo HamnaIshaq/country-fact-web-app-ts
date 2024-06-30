@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Scripts -->
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="dist/script.js"></script>
+    <!--<script defer src="js/script.js"></script>-->
+    <!--<script defer src="js/mode.js"></script>-->
+
+    <title>
+      Frontend Mentor | REST Countries API with color theme switcher
+    </title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="max-width-container">
+          <h1 class="header-h1">Where in the world?</h1>
+          <!--<button class="header-btn">
+            <ion-icon name="moon-outline" class="header-btn header-btn-moon"></ion-icon>
+            Dark Mode
+          </button>-->
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="max-width-container search-filter-flex">
+          <div id="search-country" class="search-country">
+            <label for="country-searched" class="search-country-label"
+              >Search for a country</label
+            >
+            <ion-icon name="search" class="search-country-icon"></ion-icon>
+            <input
+              type="text"
+              name="country-searched"
+              id="country-searched"
+              class="search-country-input"
+              placeholder="Search for a country..."
+            />
+          </div>
+
+          <div id="filter-region" class="filter-country">
+            <label for="region" class="filter-country-label"
+              >Filter by Region</label
+            >
+            <select name="region" id="region" class="filter-country-region">
+              <option hidden value="">Filter by Region</option>
+              <option value="africa">Africa</option>
+              <option value="america">America</option>
+              <option value="asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="oceania">Oceania</option>
+            </select>
+          </div>
+        </div>
+
+        <section class="countries max-width-container"></section>
+      </div>
+    </main>
+  </body>
+</html>

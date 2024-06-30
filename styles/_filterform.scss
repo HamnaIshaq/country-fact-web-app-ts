@@ -1,0 +1,34 @@
+@import "colors";
+
+.filter-country {
+  color: $darkGrayLight;
+  background: $white;
+  position: relative;
+  width: 200px;
+  border-radius: 6px;
+
+  &-label {
+    position: absolute;
+    left: -10000px;
+  }
+
+  &-region {
+    font-size: 12px;
+    border: 0;
+    width: 200px;
+    padding: 16px 25px;
+    border-right: 10px solid white;
+    color: $veryDarkBlueLight;
+    border-radius: 5px;
+
+    option {
+      padding: 1rem;
+    }
+  }
+
+  @media (min-width: 500px) {
+    &-region {
+      font-size: 14px;
+    }
+  }
+}

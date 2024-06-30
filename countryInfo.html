@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- Scripts -->
+    <script
+      type="module"
+      defer
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="dist/countryDetail.js"></script>
+    <!--<script defer src="js/countryDetail.js"></script>
+  <script defer src="js/mode.js"></script>-->
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | REST Countries API with color theme switcher
+    </title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="max-width-container">
+          <h1 class="header-h1">Where in the world?</h1>
+          <!--<button class="header-btn">
+          <ion-icon name="moon-outline" class="header-btn header-btn-moon"></ion-icon>
+          Dark Mode
+        </button>-->
+        </div>
+      </header>
+      <section class="max-width-container single-country-info-container">
+        <div class="back-div">
+          <a href="index.html" class="back">
+            <ion-icon name="arrow-back-outline" class="arrow-icon"></ion-icon>
+            Back
+          </a>
+        </div>
+
+        <div class="country-details"></div>
+      </section>
+    </main>
+  </body>
+</html>
